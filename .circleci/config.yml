@@ -12,6 +12,12 @@ jobs:
     steps:
       - checkout
       - run: echo "hello world 2"
+  pally:
+    docker:
+      - image: circleci/node:4.8.2
+    steps:
+      - checkout
+      - run: echo "hello world 3"
 
 workflows:
   version: 2.1
@@ -19,3 +25,4 @@ workflows:
     jobs:
       - bobby
       - sally
+      - pally
