@@ -1,20 +1,8 @@
 version: 2.1
 jobs:
-  bobby:
+  build:
     docker:
       - image: circleci/node:4.8.2
     steps:
       - checkout
       - run: echo "hello world"
-    sally:
-      docker:
-        - image: circleci/node:4.8.2
-      steps:
-        - checkout
-        - run: echo "hello world 2"
-workflows:
-  version: 2.1
-  bobby_sally:
-    jobs:
-      - bobby
-      - sally
