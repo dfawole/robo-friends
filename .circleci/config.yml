@@ -21,7 +21,7 @@ jobs:
       - image: circleci/node:8.9
     steps:
       - checkout
-      - run: echo "testing stuff"
+      - run: echo "testing stuffs"
 workflows:
   version: 2.1
   build_and_test:
@@ -29,5 +29,5 @@ workflows:
       - build
       - hithere
       - test:
-      - requires:
-          - hithere
+          requires:
+            - hithere
