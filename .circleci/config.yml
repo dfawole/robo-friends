@@ -13,7 +13,7 @@ jobs:
       - image: circleci/node:4.8.2
     steps:
       - checkout
-      - run: echo "testing stuff"
+      - run: echo "testing stuffs and more stuffs"
       - run: npm install
       - run: npm test
   hithere:
